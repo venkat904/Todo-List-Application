@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.4%; 
+    scroll-behavior: smooth;
+}
+h1{
+    font-size: 7rem;
+    color: rgb(255, 240, 240);
+    font-weight: 900;
+}
+body{
+    display:grid;
+    text-align: center;
+    justify-content: center;
+    place-items: center;
+    background-image: linear-gradient(270deg, #141414 0%, #565b5e 100%);}
+
+
+.Todo-container{
+    margin: 10rem 0rem auto;
+    padding: 5rem 5rem;
+    color: white;
+
+}
+
+input{
+    padding: 0.5rem;
+    font-size: 3rem;
+    padding-left: 0.4rem;
+    border-radius: 1rem;
+    border: none;
+  
+}
+
+
+button{
+    padding: 1rem 2rem;
+    margin-left: 1rem;
+    border-radius: 1.3rem;
+    border: none;
+    font-family: "urbanist",sans-serif;
+    font-size: 2.5rem;
+    color: aliceblue;
+    background-color: rgba(2, 206, 36, 0.863);
+    transition: all 0.1s;
+
+    &:hover{
+        box-shadow: inset 0 0 0 0.2rem rgb(21, 112, 231);
+        background-color: rgb(30, 139, 8);
+    }      
+    }
+
+li{
+    font-size: 3rem;
+    text-align: left;
+    color: rgb(247, 247, 255);  
+}
+
+.Todo-list-element{
+    width: 35rem;
+    margin: 0rem  1rem;
+
+}
+
+.main-todo-div{
+    display: grid;
+    grid-template-columns: 1fr 0.3fr;
+    padding: 0.3rem;
+}
+
+.deletebtn{
+   font-size: 2rem;
+   font-weight: 600;
+   background-color: rgb(158, 15, 15);
+
+    &:hover{
+    box-shadow: inset 0 0 0 0.1rem rgb(21, 112, 231);
+    background-color: rgb(214, 19, 19);
+} 
+}
+
+@media(max-width:765px){
+    input{
+        margin-bottom: 2rem;
+    }
+    .deletebtn{
+        padding: 1rem 1.5rem;  
+    }
+    li{
+        font-size: 3rem;
+    }
+}
